@@ -36,6 +36,9 @@ let foods = [
 */
 
 //CODE HERE
+foods.forEach(foods => {
+  foods.calories = (foods.carbs * 4) + (foods.protein * 4) + (foods.fat * 9)
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,6 +84,10 @@ const products = [
 */
 
 //CODE HERE
+let saleProducts = products.map((products) => {
+  return price = products.price - (products.price * 0.25)
+})
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -91,6 +98,9 @@ const products = [
 */
 
 //CODE HERE
+// let blueProducts = products.filter((products) => {
+//   products.color.includes('blue')
+// })
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -130,6 +140,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo)
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -139,6 +150,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+
 
 ////////////////////PROBLEM 7////////////////////
 /* 
