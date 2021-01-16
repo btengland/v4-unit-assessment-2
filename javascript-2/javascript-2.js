@@ -84,10 +84,7 @@ const products = [
 */
 
 //CODE HERE
-let saleProducts = products.map((products) => {
-  return price = products.price - (products.price * 0.25)
-})
-
+//let saleProducts = products.map(products => price = products.price - (products.price * 0.25))
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -98,9 +95,7 @@ let saleProducts = products.map((products) => {
 */
 
 //CODE HERE
-// let blueProducts = products.filter((products) => {
-//   products.color.includes('blue')
-// })
+// let blueProducts = products.filter(products => products.color.includes('blue'))
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -150,7 +145,7 @@ const helensInfo = Object.assign(contactInfo, shippingInfo)
 */
 
 //CODE HERE
-
+const ellensInfo = {...helensInfo, name: 'Ellen', email: 'ellen@email.com'}
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -158,6 +153,7 @@ const helensInfo = Object.assign(contactInfo, shippingInfo)
 */
 
 //CODE HERE
+const {email} = ellensInfo
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -166,6 +162,7 @@ const helensInfo = Object.assign(contactInfo, shippingInfo)
 */
 
 //CODE HERE
+const {zipCode, state} = shippingInfo
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -228,6 +225,7 @@ const userInfo = {
 */
 
 //CODE HERE
+const shouldAlert = userInfo.settings.alerts
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -236,6 +234,7 @@ const userInfo = {
 */
 
 //CODE HERE
+const topic = userInfo.topics[3]
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -244,6 +243,7 @@ const userInfo = {
 */
 
 //CODE HERE
+const commenterId = userInfo.comments[1].responses[0].userId
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -263,6 +263,35 @@ const userInfo = {
 */
 
 //CODE HERE
+// const person = {
+//   name: 'Brady',
+//   age: 24,
+//   jobs: ['Sales', 'Marketing', 'Coding'],
+//   birthday: function(){age += 1},
+//   favorites: [
+//     {
+//       color: 'Orange',
+//       number: 34,
+//       book: 'None',
+//       kids: [
+//         {
+//           firstChild: [
+//             {
+//             childName: 'Richard',
+//             age: 6,
+//           }
+//         ]
+//           secondChild: [
+//             {
+//             childName: 'Luis',
+//             age: 12,
+//           }
+//         ]
+//         }
+//       ]
+//   }
+// ]
+// }
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -288,7 +317,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -301,6 +330,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
